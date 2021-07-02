@@ -8,7 +8,7 @@ def pickle_save(obj, path):
     except Error as e:
         raise e
         
-def pickle_read(path):
+def pickle_load(path):
     try:
         with open(path, 'rb') as file:
             return pickle.load(file)
